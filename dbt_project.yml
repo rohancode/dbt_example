@@ -7,3 +7,5 @@ profile: 'default'
 source-paths: ["models"]
 
 target-path: "target"
+
+target-path: "target2"
