@@ -1,0 +1,137 @@
+2021-01-10 13:19:01.062210 (MainThread): Running with dbt=0.18.1
+2021-01-10 13:19:01.214165 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-01-10 13:19:01.234421 (MainThread): Tracking: tracking
+2021-01-10 13:19:01.244733 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8225ded5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8220ce5e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8220ce5ca0>]}
+2021-01-10 13:19:01.245131 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=16
+2021-01-10 13:19:01.245619 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-01-10 13:19:01.245892 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-01-10 13:19:01.246801 (Thread-1): Parsing macros/adapters.sql
+2021-01-10 13:19:01.266596 (Thread-1): Parsing macros/etc.sql
+2021-01-10 13:19:01.267877 (Thread-1): Parsing macros/catalog.sql
+2021-01-10 13:19:01.273765 (Thread-1): Parsing macros/materializations/table.sql
+2021-01-10 13:19:01.284175 (Thread-1): Parsing macros/materializations/view.sql
+2021-01-10 13:19:01.286906 (Thread-1): Parsing macros/materializations/copy.sql
+2021-01-10 13:19:01.291101 (Thread-1): Parsing macros/materializations/seed.sql
+2021-01-10 13:19:01.293750 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-01-10 13:19:01.305898 (Thread-1): Parsing macros/materializations/snapshot.sql
+2021-01-10 13:19:01.308691 (Thread-1): Parsing macros/core.sql
+2021-01-10 13:19:01.312318 (Thread-1): Parsing macros/adapters/common.sql
+2021-01-10 13:19:01.360107 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-01-10 13:19:01.368896 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-01-10 13:19:01.375743 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-01-10 13:19:01.395893 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-01-10 13:19:01.402136 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-10 13:19:01.407138 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-01-10 13:19:01.408991 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-01-10 13:19:01.415203 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-01-10 13:19:01.429174 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-10 13:19:01.445320 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-10 13:19:01.447170 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-10 13:19:01.474736 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-01-10 13:19:01.476751 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-01-10 13:19:01.478342 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-01-10 13:19:01.480015 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-01-10 13:19:01.482675 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-01-10 13:19:01.484336 (Thread-1): Parsing macros/etc/query.sql
+2021-01-10 13:19:01.485476 (Thread-1): Parsing macros/etc/datetime.sql
+2021-01-10 13:19:01.494110 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-01-10 13:19:01.495112 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-01-10 13:19:01.497082 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-01-10 13:19:01.548786 (Thread-1): Acquiring new bigquery connection "model.my_new_project.model_one".
+2021-01-10 13:19:01.599255 (Thread-2): handling status request
+2021-01-10 13:19:01.599833 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '182fa91f-de14-48be-b5aa-dfa799e6c808', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8220044790>]}
+2021-01-10 13:19:01.601418 (Thread-2): sending response (<Response 185 bytes [200 OK]>) to 10.0.8.15
+2021-01-10 13:19:03.331066 (Thread-3): handling status request
+2021-01-10 13:19:03.331531 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '182fa91f-de14-48be-b5aa-dfa799e6c808', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8220085a90>]}
+2021-01-10 13:19:03.334633 (Thread-3): sending response (<Response 9181 bytes [200 OK]>) to 10.0.19.92
+2021-01-10 13:20:41.292003 (MainThread): Running with dbt=0.18.1
+2021-01-10 13:20:41.457076 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-01-10 13:20:41.469678 (MainThread): Tracking: tracking
+2021-01-10 13:20:41.489683 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f117e9594f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1179852370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1179852ac0>]}
+2021-01-10 13:20:41.490634 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=14
+2021-01-10 13:20:41.491047 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-01-10 13:20:41.491309 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-01-10 13:20:41.492812 (Thread-1): Parsing macros/adapters.sql
+2021-01-10 13:20:41.512931 (Thread-1): Parsing macros/etc.sql
+2021-01-10 13:20:41.514337 (Thread-1): Parsing macros/catalog.sql
+2021-01-10 13:20:41.520391 (Thread-1): Parsing macros/materializations/table.sql
+2021-01-10 13:20:41.531328 (Thread-1): Parsing macros/materializations/view.sql
+2021-01-10 13:20:41.534245 (Thread-1): Parsing macros/materializations/copy.sql
+2021-01-10 13:20:41.538748 (Thread-1): Parsing macros/materializations/seed.sql
+2021-01-10 13:20:41.543429 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-01-10 13:20:41.555918 (Thread-1): Parsing macros/materializations/snapshot.sql
+2021-01-10 13:20:41.558822 (Thread-1): Parsing macros/core.sql
+2021-01-10 13:20:41.562479 (Thread-1): Parsing macros/adapters/common.sql
+2021-01-10 13:20:41.616649 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-01-10 13:20:41.629315 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-01-10 13:20:41.639903 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-01-10 13:20:41.671092 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-01-10 13:20:41.677814 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-10 13:20:41.682971 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-01-10 13:20:41.684992 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-01-10 13:20:41.691226 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-01-10 13:20:41.706622 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-10 13:20:41.732091 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-10 13:20:41.736165 (Thread-2): handling status request
+2021-01-10 13:20:41.736668 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1178e1ce20>]}
+2021-01-10 13:20:41.738447 (Thread-2): sending response (<Response 185 bytes [200 OK]>) to 10.0.18.208
+2021-01-10 13:20:41.738720 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-10 13:20:41.772066 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-01-10 13:20:41.774192 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-01-10 13:20:41.775993 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-01-10 13:20:41.777749 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-01-10 13:20:41.780451 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-01-10 13:20:41.782116 (Thread-1): Parsing macros/etc/query.sql
+2021-01-10 13:20:41.783217 (Thread-1): Parsing macros/etc/datetime.sql
+2021-01-10 13:20:41.792025 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-01-10 13:20:41.793064 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-01-10 13:20:41.794705 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-01-10 13:20:41.851174 (Thread-1): Acquiring new bigquery connection "model.my_new_project.model_one".
+2021-01-10 13:20:43.166964 (Thread-3): handling status request
+2021-01-10 13:20:43.167444 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11784df580>]}
+2021-01-10 13:20:43.170722 (Thread-3): sending response (<Response 9181 bytes [200 OK]>) to 10.0.44.142
+2021-01-10 13:21:14.707093 (MainThread): Connection 'model.my_new_project.model_one' was properly closed.
+2021-01-10 13:21:14.740064 (Thread-4): For key my_new_project, hash mismatch (FileHash(name='sha256', checksum='65e2b35d97980140db3aaf1404b59abd8286f539d3741528b9404c5c286164ad') -> FileHash(name='sha256', checksum='3012239b30be6fc3a42b18cfe46c38cc2b2ad78ad03515a6e837801321b9a731')), cache invalidated
+2021-01-10 13:21:14.740937 (Thread-4): Parsing macros/adapters.sql
+2021-01-10 13:21:14.760404 (Thread-4): Parsing macros/etc.sql
+2021-01-10 13:21:14.761722 (Thread-4): Parsing macros/catalog.sql
+2021-01-10 13:21:14.767599 (Thread-4): Parsing macros/materializations/table.sql
+2021-01-10 13:21:14.777293 (Thread-4): Parsing macros/materializations/view.sql
+2021-01-10 13:21:14.780220 (Thread-4): Parsing macros/materializations/copy.sql
+2021-01-10 13:21:14.784802 (Thread-4): Parsing macros/materializations/seed.sql
+2021-01-10 13:21:14.787921 (Thread-4): Parsing macros/materializations/incremental.sql
+2021-01-10 13:21:14.801713 (Thread-4): Parsing macros/materializations/snapshot.sql
+2021-01-10 13:21:14.805610 (Thread-4): Parsing macros/core.sql
+2021-01-10 13:21:14.809289 (Thread-4): Parsing macros/adapters/common.sql
+2021-01-10 13:21:14.854570 (Thread-4): Parsing macros/materializations/helpers.sql
+2021-01-10 13:21:14.863443 (Thread-4): Parsing macros/materializations/table/table.sql
+2021-01-10 13:21:14.870393 (Thread-4): Parsing macros/materializations/seed/seed.sql
+2021-01-10 13:21:14.891582 (Thread-4): Parsing macros/materializations/view/view.sql
+2021-01-10 13:21:14.897894 (Thread-4): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-10 13:21:14.903020 (Thread-4): Parsing macros/materializations/incremental/helpers.sql
+2021-01-10 13:21:14.904945 (Thread-4): Parsing macros/materializations/incremental/incremental.sql
+2021-01-10 13:21:14.911060 (Thread-4): Parsing macros/materializations/common/merge.sql
+2021-01-10 13:21:14.925258 (Thread-4): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-10 13:21:14.941514 (Thread-4): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-10 13:21:14.943430 (Thread-4): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-10 13:21:14.971608 (Thread-4): Parsing macros/schema_tests/relationships.sql
+2021-01-10 13:21:14.973616 (Thread-4): Parsing macros/schema_tests/not_null.sql
+2021-01-10 13:21:14.975182 (Thread-4): Parsing macros/schema_tests/unique.sql
+2021-01-10 13:21:14.976885 (Thread-4): Parsing macros/schema_tests/accepted_values.sql
+2021-01-10 13:21:14.979547 (Thread-4): Parsing macros/etc/get_custom_database.sql
+2021-01-10 13:21:14.981182 (Thread-4): Parsing macros/etc/query.sql
+2021-01-10 13:21:14.982242 (Thread-4): Parsing macros/etc/datetime.sql
+2021-01-10 13:21:14.990971 (Thread-4): Parsing macros/etc/get_custom_alias.sql
+2021-01-10 13:21:14.991990 (Thread-4): Parsing macros/etc/is_incremental.sql
+2021-01-10 13:21:14.993881 (Thread-4): Parsing macros/etc/get_custom_schema.sql
+2021-01-10 13:21:15.010724 (Thread-4): For key my_new_project, hash mismatch (FileHash(name='sha256', checksum='65e2b35d97980140db3aaf1404b59abd8286f539d3741528b9404c5c286164ad') -> FileHash(name='sha256', checksum='3012239b30be6fc3a42b18cfe46c38cc2b2ad78ad03515a6e837801321b9a731')), cache invalidated
+2021-01-10 13:21:15.044166 (Thread-4): Acquiring new bigquery connection "model.my_new_project.model_one".
+2021-01-10 13:21:15.136730 (Thread-5): handling status request
+2021-01-10 13:21:15.137162 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1178274e20>]}
+2021-01-10 13:21:15.137860 (Thread-5): sending response (<Response 185 bytes [200 OK]>) to 10.0.23.166
+2021-01-10 13:21:16.681921 (Thread-6): handling status request
+2021-01-10 13:21:16.682363 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11782df700>]}
+2021-01-10 13:21:16.685701 (Thread-6): sending response (<Response 10167 bytes [200 OK]>) to 10.0.16.243
+2021-01-10 13:21:29.087400 (Thread-7): handling status request
+2021-01-10 13:21:29.089581 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1178e07430>]}
+2021-01-10 13:21:29.092979 (Thread-7): sending response (<Response 10167 bytes [200 OK]>) to 10.0.12.132
