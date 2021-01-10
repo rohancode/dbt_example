@@ -135,3 +135,43 @@
 2021-01-10 13:21:29.087400 (Thread-7): handling status request
 2021-01-10 13:21:29.089581 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1178e07430>]}
 2021-01-10 13:21:29.092979 (Thread-7): sending response (<Response 10167 bytes [200 OK]>) to 10.0.12.132
+2021-01-10 13:21:39.520573 (MainThread): Connection 'model.my_new_project.model_one' was properly closed.
+2021-01-10 13:21:39.549076 (Thread-8): Parsing macros/adapters.sql
+2021-01-10 13:21:39.568056 (Thread-8): Parsing macros/etc.sql
+2021-01-10 13:21:39.569435 (Thread-8): Parsing macros/catalog.sql
+2021-01-10 13:21:39.575520 (Thread-8): Parsing macros/materializations/table.sql
+2021-01-10 13:21:39.585485 (Thread-8): Parsing macros/materializations/view.sql
+2021-01-10 13:21:39.589895 (Thread-8): Parsing macros/materializations/copy.sql
+2021-01-10 13:21:39.596959 (Thread-8): Parsing macros/materializations/seed.sql
+2021-01-10 13:21:39.601311 (Thread-8): Parsing macros/materializations/incremental.sql
+2021-01-10 13:21:39.621252 (Thread-8): Parsing macros/materializations/snapshot.sql
+2021-01-10 13:21:39.624417 (Thread-8): Parsing macros/core.sql
+2021-01-10 13:21:39.630142 (Thread-8): Parsing macros/adapters/common.sql
+2021-01-10 13:21:39.672927 (Thread-8): Parsing macros/materializations/helpers.sql
+2021-01-10 13:21:39.681770 (Thread-8): Parsing macros/materializations/table/table.sql
+2021-01-10 13:21:39.688607 (Thread-8): Parsing macros/materializations/seed/seed.sql
+2021-01-10 13:21:39.708695 (Thread-8): Parsing macros/materializations/view/view.sql
+2021-01-10 13:21:39.714914 (Thread-8): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-01-10 13:21:39.719875 (Thread-8): Parsing macros/materializations/incremental/helpers.sql
+2021-01-10 13:21:39.721730 (Thread-8): Parsing macros/materializations/incremental/incremental.sql
+2021-01-10 13:21:39.727832 (Thread-8): Parsing macros/materializations/common/merge.sql
+2021-01-10 13:21:39.741376 (Thread-8): Parsing macros/materializations/snapshot/strategies.sql
+2021-01-10 13:21:39.757476 (Thread-8): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-01-10 13:21:39.759320 (Thread-8): Parsing macros/materializations/snapshot/snapshot.sql
+2021-01-10 13:21:39.786877 (Thread-8): Parsing macros/schema_tests/relationships.sql
+2021-01-10 13:21:39.788884 (Thread-8): Parsing macros/schema_tests/not_null.sql
+2021-01-10 13:21:39.790415 (Thread-8): Parsing macros/schema_tests/unique.sql
+2021-01-10 13:21:39.792122 (Thread-8): Parsing macros/schema_tests/accepted_values.sql
+2021-01-10 13:21:39.794743 (Thread-8): Parsing macros/etc/get_custom_database.sql
+2021-01-10 13:21:39.796399 (Thread-8): Parsing macros/etc/query.sql
+2021-01-10 13:21:39.797449 (Thread-8): Parsing macros/etc/datetime.sql
+2021-01-10 13:21:39.806052 (Thread-8): Parsing macros/etc/get_custom_alias.sql
+2021-01-10 13:21:39.807010 (Thread-8): Parsing macros/etc/is_incremental.sql
+2021-01-10 13:21:39.808602 (Thread-8): Parsing macros/etc/get_custom_schema.sql
+2021-01-10 13:21:39.851738 (Thread-8): Acquiring new bigquery connection "model.my_new_project.model_one".
+2021-01-10 13:21:40.140308 (Thread-9): handling status request
+2021-01-10 13:21:40.140945 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1178244b80>]}
+2021-01-10 13:21:40.145946 (Thread-9): sending response (<Response 9181 bytes [200 OK]>) to 10.0.18.208
+2021-01-10 13:21:51.068732 (Thread-10): handling status request
+2021-01-10 13:21:51.069177 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '48c03bfb-aa82-4fad-bea6-d778d27b7d63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11781ef820>]}
+2021-01-10 13:21:51.072435 (Thread-10): sending response (<Response 9181 bytes [200 OK]>) to 10.0.13.33
